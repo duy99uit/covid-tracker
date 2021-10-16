@@ -20,7 +20,7 @@ function ChangeLangueges() {
   };
 
   return (
-    <Grid container spacing={0} align="center" justify="flex-end" style={{}}>
+    <Grid container spacing={0} align="center" justifyContent="flex-end" style={{}}>
       <Box sx={{ minWidth: 120 }}>
         <Box fullWidth>
           <Select
@@ -30,8 +30,8 @@ function ChangeLangueges() {
             label="Age"
             onChange={handleChange}
           >
-            {localeTagList.map((langTagItem) => (
-              <MenuItem value={langTagItem}>
+            {localeTagList.map((langTagItem, index) => (
+              <MenuItem value={langTagItem} key={index}>
                 {t(`translation:localeTag.${langTagItem}`)}
               </MenuItem>
             ))}

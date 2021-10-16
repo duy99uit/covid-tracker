@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { Button, ButtonGroup } from "@material-ui/core";
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 import moment from "moment";
-import { Button, ButtonGroup } from "@material-ui/core";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const generateOptions = (data) => {
@@ -56,7 +56,7 @@ const generateOptions = (data) => {
 function LineChart({ data }) {
   const [options, setOptions] = useState({});
   const [reportType, setReportType] = useState("all");
-  const { t, i18n } = useTranslation();
+  const { t} = useTranslation();
 
   useEffect(() => {
     let customData = [];

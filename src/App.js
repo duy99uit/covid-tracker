@@ -14,7 +14,7 @@ import "moment/locale/vi";
 import { useTranslation } from "react-i18next";
 moment.locale("en");
 function App() {
-  const { t, i18n } = useTranslation();
+  const { t} = useTranslation();
   const [countries, setCountries] = useState([]);
   const [selectedCountryId, setSelectedCountryId] = useState("");
   const [report, setReport] = useState([]);
@@ -33,7 +33,6 @@ function App() {
         (country) => country.ISO2 === selectedCountryId.toUpperCase()
       );
       getReportByCountry(selectedCountry.Slug).then((res) => {
-        console.log("getReportByCountry", { res });
         // remove last item = current date
         res.data.pop();
         setReport(res.data);

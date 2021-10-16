@@ -1,6 +1,5 @@
 import {
   FormControl,
-  FormHelperText,
   InputLabel,
   NativeSelect,
 } from "@material-ui/core";
@@ -8,7 +7,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 function CountrySelector({ value, handleOnChange, countries }) {
-  const { t, i18n } = useTranslation();
+  const { t} = useTranslation();
   return (
     <FormControl>
       <InputLabel htmlFor="" shrink>
