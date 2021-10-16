@@ -1,0 +1,13 @@
+{
+  "localeTag": {
+    "en-US": "English",
+    "vi-VN": "Vietnamese"
+  },
+  "case": "Case",
+  "recovered": "Recovered",
+  "death": "Death",
+  "totalCase": "Total",
+  "all": "All",
+  "day": "Day",
+  "country": "Country"
+}

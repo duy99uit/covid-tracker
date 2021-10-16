@@ -1,0 +1,14 @@
+{
+    "localeTag": {
+      "en-US": "Tiếng Anh",
+      "vi-VN": "Tiếng Việt"
+    },
+    "case": "Ca nhiểm",
+    "recovered": "Phục hồi",
+    "death": "Tử vong",
+    "totalCase": "Tổng số cá nhiễm",
+    "all": "Tất cả",
+    "day": "ngày",
+    "country": "Quốc gia"
+  }
+  
